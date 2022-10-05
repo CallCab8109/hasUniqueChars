@@ -33,3 +33,17 @@ function stringIsUnique(input) {
     return true;
 }
 console.log(stringIsUnique("aa"))
+
+
+//Bens Solution
+const hasUniqueChars = (str) => {
+    for(let i = 0; i<str.length; i++) {
+      for(let k = i+1; k<str.length; k++) {
+        if(str[i] === str[k]) {
+            return false
+        }
+      }
+    }
+    return true
+}
+console.log(hasUniqueChars("Monday"))
